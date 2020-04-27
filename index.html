@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Movie Suvey</title>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body id="main">
+  <h1 id="title"><u>Movies</u></h1>
+  <p id="description">What kind of movies do you like?</p>
+  <form id="survey-form">
+    <label for="name-label" class="white-text" id="name-label">Name:</><br>
+    <input type="text" id="name" placeholder="Enter your name" required></label><br><br>
+    <label for="email-label"label class="white-text" id="email-label">Email:</label><br>
+    <input type="email" id="email" placeholder="Enter your email" required><br><br>
+    <label for="number-label" class="white-text" id="number-label">Year Born:</label><br>
+    <input id="number" type="number" placeholder="yyyy" required min="1910" max="2012"></label><br><br>
+    <h4 class="white-text" id="dropdown-label">How many movies do you watch in a
+      month?</h4><br>
+    <select id="dropdown">
+      <option value="1-2-movies">1-2 movies</option>
+      <option value="3-4-movies">3-4 movies</option>
+      <option value="5-6-movies">5-6 movies</option>
+      <option value="7-8-movies">7-8 movies</option>
+      <option value="9-10-movies">9-10 movies</option>
+      <option value="+10-movies">10+ movies</option>
+    </select><br><br>
+    <fieldset class="white-text" id="genre">
+    <h4 class="white-text">What is your favorite movie genre?</h4><br>
+      <label for="romcom"><input id="romcom" type="radio" name="movie-genres" value="romcom">Romantic Comedy</label><br>
+      <label for="horror"><input id="horror" type="radio" name="movie-genres" value="horror">Horror</label><br>
+      <label for="romance"><input id="romance" type="radio" name="movie-genres" value="romance">Romance</label><br>
+      <label for="comedy"><input id="comedy" type="radio" name="movie-genres" value="comedy">Comedy</label><br>
+      <label for="action"><input id="action" type="radio" name="movie-genres" value="action">Action</label><br>
+      <label for="thriller"><input id="thriller" type="radio" name="movie-genres" value="thriller">Thriller</label><br>
+      <label for="drama"><input id="drama" type="radio" name="movie-genres" value="drama">Drama</label><br><br>
+    </fieldset>
+    <h4 class="white-text" for="movies-label" id="movies-label">What Oscar nominated movies did you see in
+      2020?</h4><br>
+    <fieldset class="white-text" id="movies">
+      <label for="Parasite"><input id="Parasite" name="movies" type="checkbox" value="Parasite">"Parasite"</label><br>
+      <label for="Ford-v-Ferrari"><input id="Ford-v-Ferrari" name="movies" type="checkbox" value="Ford-v-Ferrari">"Ford v Ferrari"</label><br>
+      <label for="The-Irishman"><input id="the-Irishman" name="movies" type="checkbox" value="The-Irishman">"The Irishman"</label><br>
+      <label for="Once-Upon-a-Time-in-Hollywood"><input id="Once-Upon-a-Time-in-Hollywood" name="movies" type="checkbox" value="Once-Upon-a-Time-in-Hollywood">"Once Upon a Time in Hollywood"</label><br>
+      <label for="Jojo-Rabbit"><input id="Jojo-Rabbit" name="movies" type="checkbox" value="Jojo-Rabbit">"Jojo Rabbit"</label><br>
+      <label for="Joker"><input id="Joker" name="movies" type="checkbox" value="Joker">"Joker"</label><br>
+      <label for="Little-Women"><input id="Little-Women" name="movies" type="checkbox" value="Little-Women">"Little Women"</lable><br>
+      <label for="1917"><input id="1917" name="movies" type="checkbox" value="1917">"1917"</label><br>
+      <label for="Marriage-Story"><input id="Marriage-Story" name="movies" type="checkbox" value="Marriage-Story">"Marriage Story"</label><br><br>
+    </fieldset>
+    <h4 class="white-text" id="comment-label">What would you like to see in next year's films?</h4>
+      <textarea id="comments" name="comments" rows="10" cols="50"
+        placeholder="Tell us what you think here..."></textarea><br>
+      <button type="submit" id="submit">Submit</button>
+  </form>
+
+</body>
+
+</html>
